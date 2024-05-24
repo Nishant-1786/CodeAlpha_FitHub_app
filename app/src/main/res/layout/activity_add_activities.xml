@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/imgfit"
+    android:layout_height="match_parent"
+    tools:context=".addActivities">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/mainfit"
+        android:fontFamily="@font/castoro"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:text="Add Activities - ">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click on below option based on exercise done"
+        android:textColor="@color/white"
+        android:fontFamily="@font/slabo"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="22dp"/>
+
+    <Button
+        android:id="@+id/fiften"
+        android:layout_width="360dp"
+        android:paddingRight="30dp"
+        android:layout_marginLeft="-112dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawableRight="@drawable/burn"
+        android:backgroundTint="#95FAEA"
+        android:fontFamily="@font/slabo"
+        android:gravity="right"
+        android:text="15 Minutes  -  50cal"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/thirty"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-112dp"
+        android:layout_marginTop="20dp"
+        android:gravity="right"
+        android:drawableRight="@drawable/burn"
+        android:backgroundTint="#95FAEA"
+        android:fontFamily="@font/slabo"
+        android:paddingRight="25dp"
+        android:text="30 Minutes  -  100cal"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/fourty"
+        android:layout_marginTop="20dp"
+        android:layout_width="360dp"
+        android:paddingRight="25dp"
+        android:layout_marginLeft="-112dp"
+        android:gravity="right"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:drawableRight="@drawable/burn"
+        android:textStyle="bold"
+        android:fontFamily="@font/slabo"
+        android:backgroundTint="#95FAEA"
+        android:layout_height="wrap_content"
+        android:text="45 Minutes  -  150cal" />
+
+    <Button
+        android:id="@+id/onehour"
+        android:layout_height="wrap_content"
+        android:layout_width="360dp"
+        android:paddingRight="50dp"
+
+        android:layout_marginLeft="-112dp"
+        android:gravity="right"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#95FAEA"
+        android:text="1 Hour  -  200cal"
+        android:fontFamily="@font/slabo"
+        android:drawableRight="@drawable/burn"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="427dp"
+        android:layout_height="327dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/exercise" />
+
+
+
+
+
+</LinearLayout>

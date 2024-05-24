@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:orientation="vertical">
+
+
+
+
+        <TextView
+            android:id="@+id/wlc"
+            android:layout_width="380dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Welcome to FitHub"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            android:textColor="#00AEFF"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/userR"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/slabo"
+            android:layout_gravity="center"
+            android:background="@drawable/roundedc"
+            android:drawableLeft="@drawable/account"
+            android:drawablePadding="5dp"
+            android:hint="Username"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="22sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/emailR"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/slabo"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/roundedc"
+            android:drawableLeft="@drawable/mail"
+            android:drawablePadding="5dp"
+            android:hint="Email"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="22sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/nameR"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/roundedc"
+            android:fontFamily="@font/slabo"
+            android:drawableLeft="@drawable/person"
+            android:drawablePadding="5dp"
+            android:hint="Name"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="22sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/passR"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/roundedc"
+            android:drawableLeft="@drawable/password"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/slabo"
+            android:hint="Password"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="22sp"
+            android:textStyle="italic" />
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/birth"
+            android:layout_gravity="center"
+            android:hint="DOB"
+            android:background="@drawable/roundedc"
+            android:textSize="22sp"
+            android:padding="10dp"
+            android:fontFamily="@font/slabo"
+            android:layout_marginTop="8dp"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:drawableLeft="@drawable/dob"
+            android:drawablePadding="5dp"> </EditText>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/mobile"
+            android:layout_gravity="center"
+            android:hint="Phone no"
+            android:textColorHint="@color/white"
+            android:background="@drawable/roundedc"
+            android:textSize="22sp"
+            android:padding="10dp"
+            android:fontFamily="@font/slabo"
+            android:layout_marginTop="8dp"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/phone"
+            android:drawablePadding="5dp"> </EditText>
+
+        <EditText
+            android:layout_width="300dp"
+            android:id="@+id/weight"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/weight"
+            android:textSize="22sp"
+            android:textStyle="italic"
+            android:fontFamily="@font/slabo"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:background="@drawable/roundedc"
+            android:hint="weight(in kg)"> </EditText>
+
+
+
+
+
+
+
+        <Button
+            android:id="@+id/RegisterR"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            android:backgroundTint="@color/white"
+            android:padding="1dp"
+            android:text="Register"
+            android:textColor="#000000"
+            android:fontFamily="@font/castoro"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account! "
+                android:textColor="@color/black"
+                android:fontFamily="@font/slabo"
+                android:textSize="15dp"
+                android:textStyle="bold|italic"> </TextView>
+
+            <TextView
+                android:id="@+id/logi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:fontFamily="@font/slabo"
+                android:textSize="15dp"
+                android:textColor="@color/design_default_color_error"
+                android:textStyle="normal|bold|italic"> </TextView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="179dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="5dp"
+        android:padding="20dp"
+        android:src="@drawable/newfit" />
+
+
+</RelativeLayout>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profilefit"
+    tools:context=".profile">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".UserProfileActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_head"
+                android:layout_width="match_parent"
+                android:layout_height="324dp">
+
+                <RelativeLayout
+                    android:id="@+id/RL_imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="254dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="100dp"
+                        android:elevation="5dp"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:id="@+id/dp"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="@drawable/account"
+
+                            android:scaleType="centerCrop" />
+                    </androidx.cardview.widget.CardView>
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="20dp"
+                        android:visibility="gone" />
+                    <ProgressBar
+                        android:id="@+id/progress_bar_profile_pic"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="110dp"
+                        android:elevation="10dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/RL_imageView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:hint="Username"
+
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:id="@+id/RL_name">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/ic_profile"
+                        android:background="@drawable/person"/>
+
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="22dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/slabo"
+                        android:layout_alignStart="@id/ic_profile"
+                        android:layout_marginStart="50dp"
+                        android:hint="name" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divider_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/RL_name"
+                    android:background="@android:color/darker_gray"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/RL_email"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@id/divider_name">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/ic_email"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/mail"/>
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/ic_email"
+                        android:layout_marginStart="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/slabo"
+                        android:textColor="@color/white"
+                        android:textSize="19dp"
+                        android:hint="Email" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divider_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/RL_email"
+                    android:background="@android:color/darker_gray"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/RL_dob"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@id/divider_email">
+
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/ic_dob"
+                        android:background="@drawable/dob"/>
+
+                    <TextView
+                        android:id="@+id/dob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/ic_dob"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="50dp"
+                        android:textColor="@color/white"
+                        android:textSize="22dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/slabo"
+                        android:hint="DOB" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divider_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/RL_dob"
+                    android:background="@android:color/darker_gray"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/RL_gender"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@id/divider_dob">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/ic_gender"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/weight"/>
+
+                    <TextView
+                        android:id="@+id/weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/ic_gender"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="50dp"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="20dp"
+                        android:textSize="22dp"
+                        android:fontFamily="@font/slabo"
+                        android:hint="Weight" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divider_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/RL_gender"
+                    android:background="@android:color/darker_gray"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/RL_mobile"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/divider_gender">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/ic_mobile"
+                        android:background="@drawable/phone"/>
+
+                    <TextView
+                        android:id="@+id/mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignStart="@id/ic_mobile"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/white"
+                        android:textSize="22dp"
+                        android:fontFamily="@font/slabo"
+                        android:hint = "Phone Number" />
+                </RelativeLayout>
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:elevation="10dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
